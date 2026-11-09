@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOVA | موقع احترافي</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #070b16;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #0c1424;
+}
+
+.logo {
+    color: #00e5ff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+.hero {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    background: radial-gradient(circle, #153653, #070b16 70%);
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #00e5ff;
+}
+
+.hero p {
+    color: #b6c5d8;
+    font-size: 18px;
+    line-height: 2;
+    margin-bottom: 35px;
+}
+
+.btn {
+    display: inline-block;
+    background: #00e5ff;
+    color: #07101c;
+    padding: 15px 35px;
+    border-radius: 9px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: #aab8ca;
+    line-height: 2;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card {
+    background: #101a2d;
+    border: 1px solid #26364d;
+    border-radius: 16px;
+    padding: 35px 20px;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #00e5ff;
+}
+
+.card h3 {
+    color: #00e5ff;
+    margin-bottom: 18px;
+    font-size: 22px;
+}
+
+.card p {
+    color: #b6c5d8;
+    line-height: 1.8;
+}
+
+.contact {
+    background: #0c1424;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    color: #aab8ca;
+}
+
+@media(max-width:600px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">NOVA.</div>
+
+    <nav>
+        <a href="#home">الرئيسية</a>
+        <a href="#about">من نحن</a>
+        <a href="#services">خدماتنا</a>
+        <a href="#contact">تواصل معنا</a>
+    </nav>
+</header>
+
+<main>
+
+<div class="hero" id="home">
+    <div>
+        <h1>مرحباً بك في <span>NOVA</span></h1>
+
+        <p>
+            اكتشف عالماً جديداً من الإبداع والتكنولوجيا.
+            <br>
+            نصنع المستقبل بأفكار مبتكرة وحلول رقمية.
+        </p>
+
+        <a href="#services" class="btn">اكتشف خدماتنا</a>
+    </div>
+</div>
+
+<section id="about">
+    <h2 class="section-title">من نحن؟</h2>
+    <p class="description">
+        NOVA منصة رقمية تجمع بين الإبداع والتكنولوجيا.
+    </p>
+</section>
+
+<section id="services">
+    <h2 class="section-title">خدماتنا</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>تصميم المواقع</h3>
+            <p>تصميم مواقع عصرية ومتجاوبة.</p>
+        </div>
+
+        <div class="card">
+            <h3>البرمجة</h3>
+            <p>تطوير تطبيقات وحلول رقمية.</p>
+        </div>
+
+        <div class="card">
+            <h3>التكنولوجيا</h3>
+            <p>حلول مبتكرة للمستقبل.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="section-title">تواصل معنا</h2>
+    <p class="description">يسعدنا التواصل معك.</p>
+    <a href="mailto:contact@example.com" class="btn">
+        راسلنا الآن
+    </a>
+</section>
+
+</main>
+
+<footer>
+    © 2026 NOVA - جميع الحقوق محفوظة
+</footer>
+
+</body>
+</html>
